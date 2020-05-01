@@ -1,35 +1,23 @@
+set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
+filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
+set t_Co=256              " enable 256-color mode.
+syntax enable             " enable syntax highlighting
+colorscheme desert        " set colorscheme
+set number                " show line numbers
+set laststatus=2          " last window always has a statusline
+filetype indent on        " activates indenting for files
+set nohlsearch            " Don't continue to highlight searched phrases.
+set incsearch             " But do highlight as you type your search.
+set ignorecase            " Make searches case-insensitive.
+set ruler                 " Always show info along bottom.
+set autoindent            " auto-indent
+set tabstop=4             " tab spacing
+set softtabstop=4         " unify
+set shiftwidth=4          " indent/outdent by 4 columns
+set shiftround            " always indent/outdent to the nearest tabstop
+set expandtab             " use spaces instead of tabs
+set smarttab              " use tabs at the start of a line, spaces elsewhere
+set nowrap                " don't wrap text
 
 
-
-" Vundle Plugin Manager:
-"------------------------
-
-set nocompatible              " required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-" add all your plugins here (note older versions of Vundle
-" used Bundle instead of Plugin)
-
-
-
-
-
-
-
-
-
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
 
