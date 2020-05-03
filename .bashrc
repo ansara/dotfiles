@@ -123,3 +123,17 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+
+# direnv virtual environment extension
+show_virtual_env() {
+  if [ -n "$VIRTUAL_ENV" ]; then
+    echo "($(basename $VIRTUAL_ENV))"
+  fi
+}
+
+PS1='$(show_virtual_env)'$PS1
+
+# direnv
+eval "$(direnv hook bash)"
+
