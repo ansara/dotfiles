@@ -135,7 +135,8 @@ show_virtual_env() {
   fi
 }
 
-PS1='$(show_virtual_env)'$PS1
+
+export PS1="\[\033[38;5;243m\][\[$(tput sgr0)\]\[\033[38;5;34m\]\A\[$(tput sgr0)\]\[\033[38;5;242m\]]\[$(tput sgr0)\] \[$(tput sgr0)\]"
 
 # direnv
 eval "$(direnv hook bash)"
