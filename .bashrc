@@ -128,6 +128,10 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 
 
+# Ignore simple spelling mistakes in the cd command
+shopt -s cdspell
+
+
 # direnv virtual environment extension
 show_virtual_env() {
   if [ -n "$VIRTUAL_ENV" ]; then
