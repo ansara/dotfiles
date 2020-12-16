@@ -1,23 +1,26 @@
-set nocompatible          " get rid of Vi compatibility mode. SET FIRST!
-filetype plugin indent on " filetype detection[ON] plugin[ON] indent[ON]
-set t_Co=256              " enable 256-color mode.
-syntax enable             " enable syntax highlighting
-colorscheme desert        " set colorscheme
-set number                " show line numbers
-set laststatus=2          " last window always has a statusline
-filetype indent on        " activates indenting for files
-set nohlsearch            " Don't continue to highlight searched phrases.
-set incsearch             " But do highlight as you type your search.
-set ignorecase            " Make searches case-insensitive.
-set ruler                 " Always show info along bottom.
-set autoindent            " auto-indent
-set tabstop=4             " tab spacing
-set softtabstop=4         " unify
-set shiftwidth=4          " indent/outdent by 4 columns
-set shiftround            " always indent/outdent to the nearest tabstop
-set expandtab             " use spaces instead of tabs
-set smarttab              " use tabs at the start of a line, spaces elsewhere
-set nowrap                " don't wrap text
+set nocompatible          " Remove Vi compatibility mode. Set first.
+filetype plugin on        " Set filetype plugin on
+set t_Co=256              " 256-color mode
+syntax enable             " Syntax highlighting
+set number                " Display line numbers
+set laststatus=2          " Give last window a statusline
+filetype indent on        " File indentation
+set nohlsearch            " Stop highlighting search phrases after search
+set incsearch             " Highlight search phrases as they are typed
+set ignorecase            " Case-insensitive searches
+set ruler                 " Include bottom ruler
+set autoindent            " Auto-indent
+set tabstop=4             " Tab spacing
+set softtabstop=4         " Unify
+set shiftwidth=4          " Indent 4 columns
+set shiftround            " Indent to the nearest tabstop
+set expandtab             " Use spaces instead of tabs
+set smarttab              " Use tabs at the start of a line, spaces elsewhere
+set nowrap                " Remove text wrapping
+
+let g:indent_guides_enable_on_vim_startup = 1
+set ts=4 sw=4 et
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
 
 execute pathogen#infect()
-
