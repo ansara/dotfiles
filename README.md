@@ -1,2 +1,2 @@
 # dotfiles
-My Linux dotfile backups for safekeeping, in case I have to reinstall my OS. 
+My Linux dotfile backups for safekeeping. Currently running Debian.
